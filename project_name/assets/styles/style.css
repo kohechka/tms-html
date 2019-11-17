@@ -18,7 +18,7 @@ body{
 h2 {
     margin-bottom: 24px;
     color: #212121;
-    font-family: 'Raleway-Regular', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 36px;
     text-transform: uppercase;
     text-align: center;
@@ -60,15 +60,15 @@ h3 {
 }
 
 .benefit__p {
-    margin-bottom: 40px;
+    margin-bottom: 80px;
 }
 
 .benefit__image-wrap {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 70px;
-    height: 70px;
+    width: 68px;
+    height: 68px;
     border: 2px solid var(--primary-color);
     border-radius: 50%;
 }
