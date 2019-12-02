@@ -224,8 +224,9 @@ button {
 
 .container {
     max-width: 1110px;
+    padding: 110px 0 110px;
     margin: 0 auto;
-    text-align: center;
+
 }
 
 .footer_icon {
@@ -301,9 +302,8 @@ ul li {
 }
 
 .welcome-title {
-    max-width: 515px;
+    width: 50%;
     color: #fff;
-    padding: 110px 0 0 0;
     text-align: left;
 }
 
@@ -342,7 +342,6 @@ ul li {
 
 .welcome-form {
     height: auto;
-    margin-top: 140px;
     background-color: #fff;
     border-radius: 3px;
     overflow: hidden;
@@ -355,7 +354,6 @@ ul li {
 
 .welcome_bg {
     background-color: rgba(0,0,0,.6);
-    padding: 0 0 140px 0;
 }
 
 .welcome-form h3 {
@@ -387,13 +385,6 @@ ul li {
     padding: 0;
 }
 
-.welcome-form {
-    height: auto;
-    margin-top: 140px;
-    background-color: #fff;
-    border-radius: 3px;
-    overflow: hidden;
-}
 
 .welcome-form_block {
     padding: 0 44px;
@@ -747,4 +738,9 @@ ol, ul {
 .about-item_photo img {
     float: left;
     margin: -12px 0 -8px 0;
+}
+
+.logo {
+    width: 80px;
+    height: 27px;
 }
