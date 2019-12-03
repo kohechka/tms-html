@@ -24,7 +24,6 @@ h2 {
     font-size: 36px;
     text-transform: uppercase;
     text-align: center;
-    margin-block-start: 110px;
 }
 
 h2:after {
@@ -43,7 +42,6 @@ h2:after {
 p {
     display: block;
     margin-block-start: 25px;
-    margin-block-end: 80px;
     margin-inline-start: 0;
     margin-inline-end: 0;
 }
@@ -75,8 +73,15 @@ button {
     background-color: transparent;
 }
 
+
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+    padding: 110px 0 90px 0;
+    text-align: center;
+}
+
 .header {
-    padding: 21px 0;
     color: var(--secondary-color);
     background-color: #000;
     display: block;
@@ -87,6 +92,7 @@ button {
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
+    padding: 20px 0 20px 0;
 }
 
 .welcome {
@@ -222,11 +228,6 @@ button {
 }
 
 
-.container {
-    max-width: 1110px;
-    margin: 0 auto;
-    text-align: center;
-}
 
 .footer_icon {
     display: inline-flex;
@@ -290,38 +291,38 @@ button {
 }
 
 ul {
-    margin: 0 -25px;
+    margin: 0 -22px;
     padding: 0;
 }
 
 ul li {
     display: inline;
-    padding: 0 24px;
+    padding: 0 24px 0 22px;
     cursor: pointer;
 }
 
 .welcome-title {
-    max-width: 515px;
+    width: 50%;
     color: #fff;
-    padding: 110px 0 0 0;
+    padding: 0;
     text-align: left;
 }
 
 .welcome-social{
-    padding: 22px 0;
+    padding: 20px 0;
     box-shadow: 0 2px 2px 0 #ccc;
-    margin-bottom: 2px;
+    position: relative;
 }
 
 .welcome-title h1 {
     font-family: 'Raleway', sans-serif;
     font-size: 36px;
     font-weight: 400;
-    padding: 15px 0;
+    padding: 22px 0;
 }
 
 .separator--white {
-    margin: 15px 0;
+    margin: 12px 0;
     background-color: #fff;
 }
 
@@ -332,7 +333,7 @@ ul li {
 }
 
 .welcome-title h3 {
-    margin: 20px 0 48px 0;
+    margin: 19px 16px 48px 0;
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -342,10 +343,10 @@ ul li {
 
 .welcome-form {
     height: auto;
-    margin-top: 140px;
     background-color: #fff;
     border-radius: 3px;
     overflow: hidden;
+    margin: 31px 0 0 0;
 }
 
 .welcome-form, .welcome-social_media {
@@ -355,16 +356,17 @@ ul li {
 
 .welcome_bg {
     background-color: rgba(0,0,0,.6);
-    padding: 0 0 140px 0;
+    padding: 0;
 }
 
 .welcome-form h3 {
     color: #333333;
-    padding: 20px;
+    padding: 17px 0;
     background-color: #f5f5f5;
     height: 55px;
     text-align: center;
     align-items: center;
+    margin-bottom: 0;
 }
 
 .welcome-form h3 span{
@@ -373,11 +375,6 @@ ul li {
     font-size: 20px;
     font-weight: bold;
 }
-.container-header {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 0;
-}
 
 .welcome-block {
     display: flex;
@@ -385,18 +382,11 @@ ul li {
     flex-wrap: wrap;
     align-items: center;
     padding: 0;
-}
-
-.welcome-form {
-    height: auto;
-    margin-top: 140px;
-    background-color: #fff;
-    border-radius: 3px;
-    overflow: hidden;
+    margin: 0 0 48px 0;
 }
 
 .welcome-form_block {
-    padding: 0 44px;
+    padding: 0 44px 25px 44px;
 }
 
 .welcome-form form input {
@@ -412,16 +402,21 @@ ul li {
 }
 
 .welcome-social_icon{
-    margin-right: 23px;
+    margin-right: 0;
 }
 
+.header .container {
+    padding: 0;
+}
 .welcome-social_icon i {
-    margin-left: 53px;
+    margin: 0 27px 0 27px;
     font-size: 48px;
     color: #cccccc;
 }
 
-
+.welcome-social .container {
+    padding: 0;
+}
 .welcome-social_media h3 {
     margin: 0 0 7px 0;
     font-family: 'OpenSans-Bold', sans-serif;
@@ -451,7 +446,7 @@ ul li {
 }
 
 .present {
-    padding: 145px 0 115px;
+    padding: 0;
     background-color: #f5f5f5;
 }
 
@@ -548,12 +543,9 @@ ol, ul {
     margin-top: 15px;
 }
 
-.contact {
-    margin-bottom: 80px;
-}
 
 .footer-social_icon{
-    margin-right: 23px;
+    margin: 18px 0 4px 0;
     display: flex;
 }
 
@@ -561,24 +553,23 @@ ol, ul {
     font-size: 24px;
     color: #cccccc;
     font-style: normal;
-    margin-left: 20px;
+    margin: 0 13px 0 16px;
     display: inline-flex;
     align-items: center;
-    margin-top: 35px;
-    margin-bottom: 10px;
 }
 
-.footer_copy p {
+.footer p {
     display: block;
-    margin-bottom: 10px;
     text-align: center;
+    padding: 0 15px 10px 14px;
+    margin: 0;
+    font-size: 12px;
 }
 
 
 /* pricing*/
 
 .price {
-    padding: 108px 0 96px;
     background-color: #f5f5f5;
 }
 
@@ -596,7 +587,6 @@ ol, ul {
 
 .price-block {
     display: flex;
-    margin-top: 80px;
     justify-content: space-between;
     align-items: flex-end;
     flex-wrap: wrap;
@@ -623,7 +613,6 @@ ol, ul {
     color: #fff;
     background-color: #ff8b38;
     border: 2.5px solid #ff8b38;
-    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -680,11 +669,6 @@ ol, ul {
 /* comments*/
 
 
-
-.about {
-    padding: 108px 0 100px;
-}
-
 .about-block {
     display: flex;
     margin-top: 30px;
@@ -721,10 +705,6 @@ ol, ul {
     margin-inline-end: 0;
     padding: 18px 10px;
     line-height: 17px;
-}
-
-.about {
-    padding: 108px 0 100px;
 }
 
 .about-item_photo h5 {
