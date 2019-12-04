@@ -12,15 +12,15 @@
     <div class="container">
         <div class="header-block">
             <div class="logo">
-                    <img src="./assets/images/logo.png" width="80px" height="26px" alt="logo">
+                    <img class="logo_img" src="./assets/images/logo.png" alt="logo">
             </div>
-                <ul class="nav">
-                    <li>Features</li>
-                    <li>About </li>
-                    <li>Pricing </li>
-                    <li class="header_link" href="#">Reviews </li>
-                    <li class="header_link" href="#">Contact </li>
-                </ul>
+                <div class="nav">
+                    <a class="header-nav__link" href="#features">Features</a>
+                    <a class="header-nav__link" href="#about">About </a>
+                    <a class="header-nav__link" href="#pricing">Pricing </a>
+                    <a class="header-nav__link" href="#reviews">Reviews </a>
+                    <a class="header-nav__link" href="#contact">Contact </a>
+                </div>
         </div>
     </div>
 </header>
@@ -31,7 +31,7 @@
             <div class="welcome-block">
                 <div class="welcome-title">
                     <div class="logo logo--margin-bottom">
-                        <img src="./assets/images/logo.png" width="177px" height="60px" alt="logo">
+                        <img class="logo_img_big" src="./assets/images/logo.png" alt="logo">
                     </div>
                     <h1>MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES</h1>
                     <span class="separator separator--white"></span>
@@ -66,7 +66,7 @@
         </div>
     </div>
 </section>
-<section class="present">
+<section id="features" class="present">
     <div class="container">
         <div class="present-nav">
             <ul>
@@ -84,14 +84,14 @@
                 <button class="button">Download</button>
             </div>
             <div class="present_img">
-                <img src="./assets/images/city.png" width="320px" height="253px" alt="city">
+                <img class="city_img" src="./assets/images/city.png" alt="city">
             </div>
         </div>
     </div>
 </section>
 
 
-<section class="benefit container _text-center">
+<section id="about" class="benefit container _text-center">
     <h2>Why this is awesome</h2>
     <p class="_indent">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
     <div class="row">
@@ -120,7 +120,7 @@
     </div>
 </section>
 
-<section class="price">
+<section id="pricing" class="price">
     <div class="container">
         <div class="container-title">
             <h2>PRICING OPTIONS</h2>
@@ -132,8 +132,8 @@
                     <h3>Basic</h3>
                 </div>
                 <div class="price-item_price">
-                    <cost class="cost">
-                        <span>$</span>0</cost>
+                    <div class="cost">
+                        <span>$</span>0</div>
                     <p>Free for Life</p>
                 </div>
                 <div class="price-item_discont"></div>
@@ -151,8 +151,8 @@
                     <h3>Professional</h3>
                 </div>
                 <div class="price-item_price">
-                    <cost class="cost">
-                        <span>$</span>19</cost>
+                    <div class="cost">
+                        <span>$</span>19</div>
                     <p>Monthly Payment</p>
                 </div>
                 <div class="price-item_discont">
@@ -172,8 +172,8 @@
                     <h3>Enterprise</h3>
                 </div>
                 <div class="price-item_price">
-                    <cost class="cost">
-                        <span>$</span>70</cost>
+                    <div class="cost">
+                        <span>$</span>70</div>
                     <p>Monthly Payment</p>
                 </div>
                 <div class="price-item_discont"></div>
@@ -190,7 +190,7 @@
     </div>
 </section>
 
-<section class="about">
+<section id="reviews" class="about">
     <div class="container">
         <div class="container-title">
             <h2>WHAT OUR CUSTOMERS ARE SAYING</h2>
@@ -243,7 +243,7 @@
 </section>
 
 
-<section class="contact _base-bg">
+<section id="contact" class="contact _base-bg">
     <div class="container _text-center">
         <h2>Contact us</h2>
         <p class="_indent">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
