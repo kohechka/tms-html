@@ -1,6 +1,5 @@
 @import url('./fonts.css');
 
-
 :root {
     --primary-color: #ff8b38;
     --secondary-color: #FFFFFF;
@@ -9,7 +8,7 @@
 * {
     margin: 0;
     font-weight: 400;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 14px;
     box-sizing: border-box;
 }
@@ -21,10 +20,11 @@ body{
 h2 {
     margin-bottom: 24px;
     color: #212121;
-    font-family: 'Raleway', sans-serif;
+    font-family: "Raleway", sans-serif;
     font-size: 36px;
     text-transform: uppercase;
     text-align: center;
+    margin-block-start: 110px;
 }
 
 h2:after {
@@ -43,13 +43,14 @@ h2:after {
 p {
     display: block;
     margin-block-start: 25px;
+    margin-block-end: 80px;
     margin-inline-start: 0;
     margin-inline-end: 0;
 }
 
 h3 {
     margin-bottom: 25px;
-    font-family: 'OpenSans-Bold', sans-serif;
+    font-family: "OpenSans-Bold", sans-serif;
     font-size: 21px;
     color: #86878b;
     display: block;
@@ -74,14 +75,6 @@ button {
     background-color: transparent;
 }
 
-
-.container {
-    max-width: 1110px;
-    margin: 0 auto;
-    padding: 110px 0 90px 0;
-    text-align: center;
-}
-
 .header {
     padding: 21px 0;
     color: var(--secondary-color);
@@ -89,38 +82,14 @@ button {
     display: block;
 }
 
-.header__container {
+.header-block {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
 }
 
-.header__link {
-    text-decoration: none;
-    color: var(--secondary-color);
-}
-
-.header__link:hover{
-    text-decoration: none;
-    color: var(--primary-color)
-}
-.header__logo{
-    width: 80px;
-    height: 26px;
-}
-
-.city_img {
-    width: 320px;
-    height: 253px;
-}
-
-.banner__logo {
-    width: 177px;
-    height: 60px;
-}
-
-.banner {
+.welcome {
     background-image: url(../images/big-city.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -190,7 +159,7 @@ button {
 .h2_white {
     margin-bottom: 24px;
     color: var(--secondary-color);
-    font-family: 'Raleway', sans-serif;
+    font-family: "Raleway", sans-serif;
     font-size: 36px;
     text-transform: uppercase;
     text-align: center;
@@ -234,12 +203,12 @@ button {
     display: block;
     margin-block-start: 25px;
     margin-block-end: 37px;
-    margin-inline-start: 0;
-    margin-inline-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
 }
 
 .container__title p {
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 16px;
 }
 
@@ -253,6 +222,11 @@ button {
 }
 
 
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+    text-align: center;
+}
 
 .footer_icon {
     display: inline-flex;
@@ -291,27 +265,12 @@ button {
     border-radius: 3px;
     cursor: pointer;
 }
-.button:hover {
-    color: var(--secondary-color);
-    cursor: pointer;
-    text-decoration: none;
-    transition: all 0.3s;
-    background: #ff661e;
-}
 
 .button._outline {
     background-color: transparent;
     border-radius: 0;
     border-color: var(--secondary-color);
     box-shadow: none;
-}
-
-.button._outline:hover {
-    color: var(--secondary-color);
-    cursor: pointer;
-    text-decoration: none;
-    transition: all 0.3s;
-    background: var(--primary-color);
 }
 
 .contact__field {
@@ -330,48 +289,39 @@ button {
     justify-content: space-between;
 }
 
-.header__nav {
-    margin: 0 -29px;
-    padding: 0;
-}
-
-.header__link {
-    display: inline;
-    padding: 0 29px 0 16px;
-    cursor: pointer;
-}
 ul {
-    margin: 0 -22px;
+    margin: 0 -25px;
     padding: 0;
 }
 
 ul li {
     display: inline;
-    padding: 0 24px 0 22px;
+    padding: 0 24px;
     cursor: pointer;
 }
 
-.banner__description {
-    width: 50%;
+.welcome-title {
+    max-width: 515px;
     color: #fff;
+    padding: 110px 0 0 0;
     text-align: left;
-    padding: 0 0 48px 0;
 }
 
-.social{
+.welcome-social{
+    padding: 22px 0;
     box-shadow: 0 2px 2px 0 #ccc;
-    position: relative;
+    margin-bottom: 2px;
 }
 
-.banner__description h1 {
+.welcome-title h1 {
     font-family: 'Raleway', sans-serif;
     font-size: 36px;
     font-weight: 400;
-    padding: 20px 0;
+    padding: 15px 0;
 }
 
 .separator--white {
-    margin: 13px 0;
+    margin: 15px 0;
     background-color: #fff;
 }
 
@@ -381,8 +331,8 @@ ul li {
     height: 2px;
 }
 
-.banner__description h3 {
-    padding: 18px 16px 18px 0;
+.welcome-title h3 {
+    margin: 20px 0 48px 0;
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -390,53 +340,66 @@ ul li {
     text-align: left;
 }
 
-.banner__form {
+.welcome-form {
     height: auto;
+    margin-top: 140px;
     background-color: #fff;
     border-radius: 3px;
     overflow: hidden;
-    margin: 0 0 21px 0;
 }
 
-.banner__form, .social__description {
+.welcome-form, .welcome-social_media {
     max-width: 360px;
 
 }
 
-.banner_bg {
+.welcome_bg {
     background-color: rgba(0,0,0,.6);
-    padding: 0;
+    padding: 0 0 140px 0;
 }
 
-.banner__container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
-}
-
-.banner__heading {
+.welcome-form h3 {
     color: #333333;
-    padding: 17px 0;
+    padding: 20px;
     background-color: #f5f5f5;
     height: 55px;
     text-align: center;
     align-items: center;
-    margin-bottom: 0;
 }
 
-.banner__heading span{
+.welcome-form h3 span{
     color: var(--primary-color);
     font-family: 'OpenSans-Bold', sans-serif;
     font-size: 20px;
     font-weight: bold;
 }
-
-.banner__input {
-    padding: 0 44px 25px 44px;
+.container-header {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 0;
 }
 
-.banner__field {
+.welcome-block {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0;
+}
+
+.welcome-form {
+    height: auto;
+    margin-top: 140px;
+    background-color: #fff;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.welcome-form_block {
+    padding: 0 44px;
+}
+
+.welcome-form form input {
     display: inline-block;
     width: 100%;
     margin: 18px 0;
@@ -448,43 +411,25 @@ ul li {
     box-sizing: border-box;
 }
 
-.social__icons{
-    margin-right: 0;
+.welcome-social_icon{
+    margin-right: 23px;
 }
 
-.header .container {
-    padding: 0;
-}
-.social__icons a {
-    margin: 0 25px 0 27px;
+.welcome-social_icon i {
+    margin-left: 53px;
     font-size: 48px;
     color: #cccccc;
 }
 
-.social__icons a:hover {
-    text-decoration: none;
-    color: var(--primary-color);
-}
-a {
-    text-decoration: none;
-}
-.social__container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
-    text-align: left;
-    padding: 17px 0;
 
-}
-.social__description h3 {
+.welcome-social_media h3 {
     margin: 0 0 7px 0;
     font-family: 'OpenSans-Bold', sans-serif;
     font-size: 20px;
     font-weight: 700;
     color: #333;
 }
-.social__description p {
+.welcome-social_media p {
     font-family: 'OpenSans-Regular', sans-serif;
     font-size: 14px;
     line-height: 20px;
@@ -492,14 +437,21 @@ a {
     margin: 0;
    }
 
-.banner__submit {
+.welcome-social-block {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: left;
+}
+.welcome-form_btn button {
     width: 100%;
     height: 55px;
     border-radius: 0;
 }
 
 .present {
-    padding: 0;
+    padding: 145px 0 115px;
     background-color: #f5f5f5;
 }
 
@@ -572,6 +524,12 @@ ol, ul {
     margin-left: 100px;
 }
 
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 .present-description {
     max-width: 475px;
     float: left;
@@ -590,38 +548,37 @@ ol, ul {
     margin-top: 15px;
 }
 
+.contact {
+    margin-bottom: 80px;
+}
 
 .footer-social_icon{
-    padding: 40px 0 9px 0;
+    margin-right: 23px;
     display: flex;
 }
 
-.footer-social_icon a {
+.footer-social_icon i {
     font-size: 24px;
     color: #cccccc;
     font-style: normal;
-    margin: 0 13px 0 16px;
+    margin-left: 20px;
     display: inline-flex;
     align-items: center;
+    margin-top: 35px;
+    margin-bottom: 10px;
 }
 
-.footer-social_icon a:hover {
-    text-decoration: none;
-    color: var(--primary-color);
-}
-
-.footer p {
+.footer_copy p {
     display: block;
+    margin-bottom: 10px;
     text-align: center;
-    padding: 0 15px 10px 14px;
-    margin: 0;
-    font-size: 12px;
 }
 
 
 /* pricing*/
 
 .price {
+    padding: 108px 0 96px;
     background-color: #f5f5f5;
 }
 
@@ -639,6 +596,7 @@ ol, ul {
 
 .price-block {
     display: flex;
+    margin-top: 80px;
     justify-content: space-between;
     align-items: flex-end;
     flex-wrap: wrap;
@@ -665,6 +623,7 @@ ol, ul {
     color: #fff;
     background-color: #ff8b38;
     border: 2.5px solid #ff8b38;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -704,9 +663,10 @@ ol, ul {
 
 .cost {
     color: var(--secondary-color);
-    padding-bottom: 24px;
+    margin-bottom: 24px;
+    padding: 0;
     font-size: 94px;
-    margin-bottom: 1px;
+    margin-block-start: 1px;
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
 }
@@ -719,6 +679,11 @@ ol, ul {
 
 /* comments*/
 
+
+
+.about {
+    padding: 108px 0 100px;
+}
 
 .about-block {
     display: flex;
@@ -756,6 +721,10 @@ ol, ul {
     margin-inline-end: 0;
     padding: 18px 10px;
     line-height: 17px;
+}
+
+.about {
+    padding: 108px 0 100px;
 }
 
 .about-item_photo h5 {
